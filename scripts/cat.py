@@ -66,6 +66,7 @@ class Catcat:
         f.seek( self.iter_pos + 0x14, 0 )
         print(hex(self.iter_pos))
         for i in range(self.raw_count):
+            print("NOW POS:", hex(f.tell()))
             self.s_item_poses.append(self.iter_pos + unpack('<I', f.read(4) )[0] )
         for i in range(self.raw_count):
             self.s_item_lens.append(unpack('<I', f.read(4) )[0] )
