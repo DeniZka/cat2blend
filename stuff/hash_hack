@@ -1,0 +1,71 @@
+obj00.cat
+
+000_obj10,  0x1c90   non_add, non_mul, obj_container_s, obj_container_s_spc
+
+-------------------
+001_obj11, 0x138f0 non_add, non_mul, obj_container_b, obj_container_b_spc
+
+-------------------
+002_obj12, 0x74510 non_add, obj12, obj12_mul, obj12_spc
+-----94c8bb50
+a0486709 =  0x096748a0
+ea949b43    0x439b94ea
+44f3eb88    0x88ebf344
+
+-------------------
+003_obj13, 0x1a6f10 non_add, obj13, obj13_mul, obj13_spc
+---
+3678607e    0x7e607836
+5abdfb7e    0x7efbdb5a
+f4da8b85    0x858bdaf4
+
+-------------------
+004_obj14, 0x2d9910 non_add, obj14, obj14_mul, obj14_spc
+-----
+95ed04e0    0xe004ed95
+4a61dbcc    0xccdb614a
+e406ab37    0x37ab06e4
+
+-------------------
+005_obj15, 0x40c310 non_add, obj15, obj15_mul, obj15_spc,
+-----
+03dd0397    0x9703dd03
+fa48bbf1    0x
+542fcb0a
+
+-------------------
+006_obj16, 0x53ed10 non_add, obj16, obj16_mul, obj16_spc
+---
+b98ca00e
+2a321bb6
+84556b4d
+
+-------------------
+007_obj17, 0x671710 non_add, obj17, obj17_mul, obj17_spc,
+----
+2fcb0d79
+9a1b7b8b
+347c0b70
+
+-------------------
+008_obj18, 0x7a4110 non_add, obj18, obj18_mul, obj18_spc,
+----
+bea1b2e9
+4b8c2b09
+e5eb5bf2
+
+-------------------
+009_obj19, 0x8d6b10 non_add, obj19, obj19_mul, obj19_spc
+----
+2891b59e
+fba54b34
+55c23bcf
+
+-------------------
+010_obj07, 0x9e0bc0 non_add, non_mul, obj07, obj07_spc
+
+-------------------
+011_item13, 0x9e3c50 item13_EE, item13_nml_EE,
+
+-------------------
+012_obj99, 0x9ebe00 non_add, non_mul, obj99_tama, obj99_tama_spc
