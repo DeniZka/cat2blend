@@ -7,10 +7,10 @@ obj00.cat
 
 -------------------
 002_obj12, 0x74510 non_add, obj12, obj12_mul, obj12_spc
------94c8bb50
+-----94c8bb50   0x50bbc894
 a0486709 =  0x096748a0
 ea949b43    0x439b94ea
-44f3eb88    0x88ebf344
+44f3ebB8    0xB8ebf344
 
 -------------------
 003_obj13, 0x1a6f10 non_add, obj13, obj13_mul, obj13_spc
@@ -63,9 +63,77 @@ fba54b34
 
 -------------------
 010_obj07, 0x9e0bc0 non_add, non_mul, obj07, obj07_spc
+-----
+d29aa304    0x04a39ad2
+6e8d1660    0x60168d6e
+91af57bb    0xbb57af91
 
 -------------------
 011_item13, 0x9e3c50 item13_EE, item13_nml_EE,
 
 -------------------
 012_obj99, 0x9ebe00 non_add, non_mul, obj99_tama, obj99_tama_spc
+
+
+=================================
+18a_04_H.cat 13_04_H.cat
+
+ok 0x4098abe4 RR   break_RR   ok
+ok 0x9a96ea1d      bura00_00_EE
+ok 0x71b0defd      bura00_00_nml_EE
+ok 0x67cfba74      clothes00_EE
+ok 0x2ac917ab EE   clothes00_brk0_EE
+ok 0xd00f5320      clothes00_brk0_wet_EE
+ok 0x927570ce      clothes00_brk1_EE
+ok 0x1ca553be      clothes00_brk1_wet_EE
+ok 0xf3572078      clothes00_nml_EE
+ok 0x7253479a      clothes00_wet_EE
+ok 0x41aecbf0 EE   height00_EE
+ok 0x798eb54f EE   skin00_EE
+ok 0x4df0dc02      skin00_nml_EE
+ok 0x4dd8a39b EE   skirt00_EE
+ok 0xed36a289      skirt00_brk0_EE
+ok 0x558ac5ec      skirt00_brk1_EE
+ok 0xe82dc6e4      skirt00_nml_EE
+ok 0x18d136bc EE   wetbura00_EE
+
+
+========================================
+ 40_00_L.cat
+
+0x172530a9    pants00_00_EE,
+0xfc13a94a    pants00_00_nml_EE,
+0x1a26ab5c    swim_blend00_EE
+
+adv_
+0xc39704fe  pl11_weapon02_EE,
+0x1242139f  pl11_weapon02_nml_EE
+
+0x4dfa5a5b  acce_face12_00_EE,
+0x8892ad3d  acce_face12_00_nml_EE
+
+===============
+barrier.cat
+
+0x66008612  ef_scroll10
+
+==========================
+bg27.cat
+
+0xcba964dd  00,
+0x4d5fdcdf  00_spc,
+0xbcae544b  01,
+0x703ff56f  01_spc,
+0x25a705f1  02,
+0x50bbc894  non_add,
+0x04a39ad2  non_mul,
+0xffd3fd7c  non_spc
+
+
+====================
+
+
+
+
+
+
