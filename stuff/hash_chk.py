@@ -1,11 +1,29 @@
+#!/usr/bin/python3
+import sys
+a = bytearray('obj'.encode('ascii'))
+print(a)
+crc = 0x04C11DB7
+for x in a:
+    crc ^= x << 24;
+    for k in range(8):
+        crc = (crc << 1) ^ 0x04c11db7 if crc & 0x80000000 else crc << 1
+crc = ~crc
+crc &= 0xffffffff
+print(hex(crc))
+exit()
+
+
+
+
+
 sl = ['obj18', 'obj18,', "obj18,\r\n" ]
 ss = [0x2fcb0d79, 0x790dcb2f]
-for c in range(0xffffff)
+for c in range(0xffffff):
     for s in sl:
         h = 0
         for c in s:
             h = h * c + ord(c)
-        print(hex(h))
+#        if 
 
 exit()
 
