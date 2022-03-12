@@ -6,9 +6,9 @@ import zlib
 
 
 #known material name
-s = b'bg05_yuka_minasoko_mul' #bg05_yuka_minasoko_add
+s = b'obj_container_s_spc' #bg05_yuka_minasoko_add
 #known hash (little-endian readed)
-req_res = 0x0f340e1e  #
+req_res = 0x9133bed6  #
 
 known_initial = [
     (2,  0x65e3626d), # 00 02
@@ -26,11 +26,11 @@ known_initial = [
     (15, 0xca72f004), # skirt00_brk0_EE skirt00_brk1_EE swim_blend00_EE
     (16, 0xc758f1c7), # bura00_00_nml_EE clothes00_nml_EE clothes00_wet_EE pl11_weapon02_EE
     (17, 0x8033134c), # acce_body03_00_EE clothes00_brk0_EE clothes00_brk1_EE pants00_00_nml_EE
-    (18, 0x90a7ddc8), # bg05_yuka_minasoko
+    (18, 0x591ee6a1), # pl34_eye_tensin_EE  0x90a7ddc8), # bg05_yuka_minasoko
     #no 19
     (20, 0xd9cf5811), # pl11_weapon02_nml_EE
     (21, 0x1668a9da), # richacce_head08_00_EE  acce_body03_00_nml_EE clothes00_brk1_wet_EE 
-    (22, 0x3eb8768a), # bg05_yuka_minasoko_spc
+    (22, 0x0b0cfaef), # pl34_eye_tensin_nml_EE ###bg05_yuka_minasoko_spc
     #no 23, 24
     (25, 0x5448a65f), # richacce_head08_00_nml_EE 
 ]
