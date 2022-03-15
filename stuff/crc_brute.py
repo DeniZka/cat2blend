@@ -6,9 +6,9 @@ import zlib
 
 
 #known material name
-s = b'bg_obj_juisestand_GItex_mull' #bg05_yuka_minasoko_add
+s = b'bg10_kaminari_mon01cvA_add' #bg05_yuka_minasoko_add
 #known hash (little-endian readed)
-req_res = 0x9eb59128  #
+req_res = 0xe4b3a99e  #
 
 known_initial = [
     (2,  0x65e3626d), # 00 02
