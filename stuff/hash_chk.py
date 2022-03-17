@@ -8,11 +8,14 @@ import zlib
 # clothes00_outline_EE,
 # cloth_fragment
 
-dds_name = 'clothes00_outline_EE'
+dds_name = '4'
 
-known_initial = {
+CRC32_INITIALS = {
+#string_len: crc32_initial
+    1: 0xb840237, # testing!!!
     2:  0x65e3626d, # 00 02
-    # no 3, 4 
+    #3, 4 are unknown for now
+    4:  0x6dd90a99, # neck
     5:  0x0b840636, # obj12 obj13 obj44
     6:  0x50b362ef, # 00_spc 01_spc obj115
     7:  0xb979a551, # csl_nml non_add non_spc
@@ -26,18 +29,23 @@ known_initial = {
     15: 0xca72f004, # skirt00_brk0_EE skirt00_brk1_EE swim_blend00_EE
     16: 0xc758f1c7, # bura00_00_nml_EE clothes00_nml_EE clothes00_wet_EE pl11_weapon02_EE
     17: 0x8033134c, # acce_body03_00_EE clothes00_brk0_EE clothes00_brk1_EE pants00_00_nml_EE
-    18: 0x90a7ddc8, # bg05_yuka_minasoko
-    #no 19
+    18: 0x591ee6a1, # 
+    19: 0xa2b1d449, # obj_container_s_spc
     20: 0xd9cf5811, # pl11_weapon02_nml_EE
     21: 0x1668a9da, # richacce_head08_00_EE  acce_body03_00_nml_EE clothes00_brk1_wet_EE 
-    22: 0x3eb8768a, # bg05_yuka_minasoko_spc
-    #no 23, 24
-    25: 0x5448a65f, # richacce_head08_00_nml_EE 
+    22: 0x0b0cfaef, # pl34_eye_tensin_nml_EE
+    23: 0xd84fa8fe, # tex_brkct_obj37_snowman
+    24: 0x4de94396, # bg_obj_boxcar_GItex_mull
+    25: 0x5448a65f, # richacce_head08_00_nml_EE tex_brkct_obj37_snowman_s
+    26: 0x90825b9f, # bg10_kaminari_mon01cvA_add ????
+    27: 0x9d241a3e, # bg_obj_yakuzacar_GItex_mull
+    28: 0xf907fabf, # bg_obj_juisestand_GItex_mull 0x6696eadf
 }
+
 print("image name:", dds_name)
 dl = len(dds_name)
 print("Img name len:", dl)
-seed = known_initial[dl]
+seed = CRC32_INITIALS[dl]
 print("Img seed:", hex(seed))
 res = zlib.crc32(bytearray(dds_name.encode('ascii')), seed ) 
 print("Your hash:", hex(res))
