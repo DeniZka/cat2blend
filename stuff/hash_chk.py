@@ -8,12 +8,13 @@ import zlib
 # clothes00_outline_EE,
 # cloth_fragment
 
-dds_name = 'finger_R_C00'
+dds_name = 'neck_L'
 
 CRC32_INITIALS = {
 #string_len: crc32_initial
     1: 0xb840237, # testing!!!
     2:  0x65e3626d, # 00 02
+    3: 0x5cd1d97d, #untested
     #3, 4 are unknown for now
     4:  0x6dd90a99, # neck
     5:  0x0b840636, # obj12 obj13 obj44

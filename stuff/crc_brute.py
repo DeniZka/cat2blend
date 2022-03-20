@@ -7,14 +7,15 @@ import zlib
 
 #known material name
 #chr(0x4)
-s = \x04 #bg05_yuka_minasoko_add
+s = b'hips_L' #bg05_yuka_minasoko_add
 print(s)
 #known hash (little-endian readed)
-req_res = 0x6dd90a99  #
+req_res = 0x99dc9c9c  #
 
 known_initial = [
 #    (1, 0xb840207), #4
     (2,  0x65e3626d), # 00 02
+    (3, 0x5cd1d97d),
     # no 3, 4 
     (5,  0x0b840636), # obj12 obj13 obj44
     (6,  0x50b362ef), # 00_spc 01_spc obj115
