@@ -8,7 +8,7 @@ import zlib
 # clothes00_outline_EE,
 # cloth_fragment
 
-dds_name = 'shoulder_AS00'
+dds_name = 'pl12_face00_outline_EE'
 
 CRC32_INITIALS = {
 #string_len: crc32_initial
