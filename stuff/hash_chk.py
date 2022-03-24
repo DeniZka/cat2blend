@@ -7,8 +7,7 @@ import zlib
 
 # clothes00_outline_EE,
 # cloth_fragment
-
-dds_name = 'head'
+dds_name = 'teeth_01'
 
 CRC32_INITIALS = {
 #string_len: crc32_initial

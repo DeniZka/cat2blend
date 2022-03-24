@@ -24,13 +24,29 @@ I'm using linux, so modify windows paths by your self. Sory win guys
 4. select any file with model or animation
     
 #### how to load character poperly
+Every actor got two types of meshes lower armateured and polygoned (_L) and higher (_H).
+Also there are two types of actions. For H and L armatures. 
+_hr action is for hair, _wpn is for weapon, _hd is for face mimic.
+You you need to set same action with different suffix to different body parts
+
+There is an some of order
 - load some buras (texture only)
 - load face
 - load hair
+    - in hair aramture object set face armature as a parent
 - load body
-    - select another body's texture skin_*** 
-
-to load new body - remove textures and shaders
+    - select another body's texture skin_*** (it loads with face)
+    - hide unwanted cloth meshes
+    - add second material 'outline**skin' to every skin body parts (if you want toon like outlines to body)
+- load pantsu
+    - change pants armature object parent a body armature (no bone) OR
+    - swap pants object parent to an body armature (pants armature remove)
+    - hide unwanted pants meshes
+- rotate face armature to x = -90
+- in face armature add constrain 'child of'
+    - set constraint boject to armature and bone to 'head'
+- select armature and set its action
+- joy
 
 #### how to reset characher pose
 sometimes some pose can overlap some another pose. Looks creepy
