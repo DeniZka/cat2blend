@@ -7,10 +7,10 @@ import zlib
 
 #known material name
 #chr(0x4)
-s = b'hips_L' #bg05_yuka_minasoko_add
+s = b'bg18_central_shop_window_1' #bg05_yuka_minasoko_add
 print(s)
 #known hash (little-endian readed)
-req_res = 0x99dc9c9c  #
+req_res = 0xb4d09529  #
 
 known_initial = [
 #    (1, 0xb840207), #4
