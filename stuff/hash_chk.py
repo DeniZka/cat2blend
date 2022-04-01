@@ -7,7 +7,7 @@ import zlib
 
 # clothes00_outline_EE,
 # cloth_fragment
-dds_name = 'teeth_01'
+dds_name = 'bg13_daibutu_head_mul'
 
 CRC32_INITIALS = {
 #string_len: crc32_initial
@@ -47,7 +47,7 @@ dl = len(dds_name)
 print("Img name len:", dl)
 seed = CRC32_INITIALS[dl]
 print("Img seed:", hex(seed))
-res = zlib.crc32(bytearray(dds_name.encode('ascii')), seed ) 
+res = zlib.crc32(bytearray(dds_name.encode('cp932')), seed ) 
 print("Your hash:", hex(res))
 
 
